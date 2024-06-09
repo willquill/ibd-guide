@@ -1,0 +1,20 @@
+{
+    "index": "🏠 Home",
+    "---": {
+        "type": "separator"
+    },
+    "types": "ℹ️ Types of IBD",
+    "treatment": "💊 IBD Treatment",
+    "personal-stories": "🧑🏽‍💻 Personal Stories",
+    "ostomy-supplies": "👝 Ostomy Supplies",
+    "diet": "🍎 Diet",
+    "----": {
+        "type": "separator"
+    },
+    "contribute": "🩵 Make This Site Better",
+    "about": "❓ About",
+    "-----": {
+        "type": "separator"
+    },
+    "external-resources": "⭐ External Resources"
+}
