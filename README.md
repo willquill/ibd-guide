@@ -1,5 +1,7 @@
 # IBD Guide
 
+![IBD Guide](https://github.com/willquill/ibd-guide/blob/main/logo-color.png?raw=true)
+
 ## Welcome
 
 This GitHub repository hosts the code that deploys the [IBD Guide](https://ibd.guide) website at [https://ibd.guide](https://ibd.guide.com)
@@ -22,48 +24,22 @@ Use your GitHub account (free) to submit an issue or pull request with the modif
 
 See [Nextra Docs Theme documentation](https://nextra.site/docs/docs-theme) to see how to add content to the pages.
 
-In general, I did this:
-
-```sh
-npm create cloudflare@latest ibd-guide -- --framework=next
-```
-
-[This post](https://stefanblos.com/posts/nextjs-new-app/) helped me pick out the options.
-
-After it finished, it said this:
-
-```
-├  SUCCESS  View your deployed application at https://ibd-guide.pages.dev
-│ 
-│ Navigate to the new directory cd ibd-guide
-│ Run the development server npm run dev
-│ Preview your application npm run preview
-│ Deploy your application npm run deploy
-│ Read the documentation https://developers.cloudflare.com/pages
-│ Stuck? Join us at https://discord.cloudflare.com
-```
-
-After the `https://ibd-guide.pages.dev/` starter site had been deployed, I
-
-
-
-
-
-Get files written inside pages, then do:
-
-```sh
-npm install
-```
-
-Then test locally:
+When you make a change, you can see it with:
 
 ```sh
 npm run dev
 ```
 
-### On my fix list
+If it hands without making the site ready, try this:
 
-- Disable navigation on the personal story pages
+```sh
+rm -rf node_modules && npm i --force
+```
+
+### On my to-do list
+
+- Create a feedback page so you don't have to create a GitHub account to submit your personal story.
+- Add a logo (I already have it! I just need to add it to the website somehow)
 
 ## License
 

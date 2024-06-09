@@ -2,17 +2,19 @@ import { useRouter } from 'next/router'
 import { useConfig } from 'nextra-theme-docs'
 
 export default {
-    logo: <span>IBD Guide</span>,
     project: {
       link: 'https://github.com/willquill/ibd-guide'
     },
-    useNextSeoProps() {
-      const { asPath } = useRouter()
-      if (asPath !== '/') {
-        return {
-          titleTemplate: '%s – IBD Guide'
-        }
-      }
+    footer: {
+      text: (
+        <span>
+          MIT {new Date().getFullYear()} ©{' '}
+          <a href="https://willcoquillette.com" target="_blank">
+            Will Coquillette
+          </a>
+          .
+        </span>
+      )
     },
     head: () => {
       const { asPath, defaultLocale, locale } = useRouter()
@@ -32,21 +34,23 @@ export default {
         </>
       )
     },
+    logo: <span>IBD Guide</span>,
+    navigation: {
+      prev: false,
+      next: false
+    },
     sidebar: {
       defaultMenuCollapseLevel: 1
     },
     search: {
       placeholder: 'Search this site...'
     },
-    footer: {
-      text: (
-        <span>
-          MIT {new Date().getFullYear()} ©{' '}
-          <a href="https://willcoquillette.com" target="_blank">
-            Will Coquillette
-          </a>
-          .
-        </span>
-      )
+    useNextSeoProps() {
+      const { asPath } = useRouter()
+      if (asPath !== '/') {
+        return {
+          titleTemplate: '%s – IBD Guide'
+        }
+      }
     }
 }
