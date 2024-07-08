@@ -4,7 +4,7 @@
 
 ## Welcome
 
-This GitHub repository hosts the code that deploys the [IBD Guide](https://ibd.guide) website at [https://ibd.guide](https://ibd.guide.com)
+This GitHub repository hosts the code that deploys the [IBD Guide](https://ibd.guide) website at [https://ibd.guide](https://ibd.guide)
 
 I'm using the [Nextra](https://nextra.site/) framework to make this website.
 
