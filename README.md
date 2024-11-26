@@ -69,6 +69,16 @@ If it hands without making the site ready, try this:
 rm -rf node_modules && npm i --force
 ```
 
+### Logo
+
+Nextra does not support SVG files, so [SVGR](https://bratislava.github.io/frontend/svg) must be used.
+
+I followed the linked guide but used npm instead of yarn.
+
+```sh
+npm i @svgr/webpack
+```
+
 ### On my to-do list
 
 - Create a feedback page so you don't have to create a GitHub account to submit your personal story.
