@@ -41,7 +41,40 @@ Additional notes:
 
 See [Nextra Docs Theme documentation](https://nextra.site/docs/docs-theme) to see how to add content to the pages.
 
-When you make a change, you can see it with:
+In general, I did this:
+
+```sh
+npm create cloudflare@latest ibd-guide -- --framework=next
+```
+
+[This post](https://stefanblos.com/posts/nextjs-new-app/) helped me pick out the options.
+
+After it finished, it said this:
+
+```
+├  SUCCESS  View your deployed application at https://ibd-guide.pages.dev
+│ 
+│ Navigate to the new directory cd ibd-guide
+│ Run the development server npm run dev
+│ Preview your application npm run preview
+│ Deploy your application npm run deploy
+│ Read the documentation https://developers.cloudflare.com/pages
+│ Stuck? Join us at https://discord.cloudflare.com
+```
+
+After the `https://ibd-guide.pages.dev/` starter site had been deployed, I
+
+
+
+
+
+Get files written inside pages, then do:
+
+```sh
+npm install
+```
+
+Then test locally:
 
 ```sh
 npm run dev
@@ -51,6 +84,16 @@ If it hands without making the site ready, try this:
 
 ```sh
 rm -rf node_modules && npm i --force
+```
+
+### Logo
+
+Nextra does not support SVG files, so [SVGR](https://bratislava.github.io/frontend/svg) must be used.
+
+I followed the linked guide but used npm instead of yarn.
+
+```sh
+npm i @svgr/webpack
 ```
 
 ### On my to-do list
