@@ -53,6 +53,20 @@ If it hands without making the site ready, try this:
 rm -rf node_modules && npm i --force
 ```
 
+### Updating
+
+From the [version-15](https://nextjs.org/docs/app/guides/upgrading/version-15) page:
+
+```sh
+npx @next/codemod@canary upgrade latest
+```
+
+^ That didn't work, but this appeared to work:
+
+```sh
+npm i next@latest react@latest react-dom@latest eslint-config-next@latest
+```
+
 ### On my to-do list
 
 - Create a feedback page so you don't have to create a GitHub account to submit your personal story.
