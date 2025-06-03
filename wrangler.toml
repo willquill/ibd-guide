@@ -1,6 +1,6 @@
 name = "ibd-guide"
 compatibility_date = "2025-04-01"
-main = "src/index.mdx"
+main = "pages/index.mdx"
 
 [assets]
 directory = "./dist"
