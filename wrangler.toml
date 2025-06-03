@@ -1,6 +1,7 @@
 name = "ibd-guide"
 compatibility_date = "2025-06-03"
 main = "./worker/index.ts"
+preview_urls = true
 
 [assets]
 directory = "./dist/client/"
