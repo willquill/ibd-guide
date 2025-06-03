@@ -1,0 +1,7 @@
+import { WorkerEntrypoint } from "cloudflare:workers";
+
+export default class extends WorkerEntrypoint {
+  async fetch(request: Request) {
+    return new Response("Hello, world!");
+  }
+}
